@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <title>AI Resume Matcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+        background: #f4f6f9;
+    }
+</style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="col-md-6 offset-md-3 bg-white p-4 rounded shadow">
+
+        <h3 class="text-center mb-4">AI Resume Matcher</h3>
+
+        <form action="/analyze" method="POST" enctype="multipart/form-data">
+
+            <!-- Resume -->
+            <div class="row mb-3 align-items-center">
+                <div class="col-4 text-start">
+                    <label class="form-label mb-0">Resume</label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="resume" class="form-control" required>
+                </div>
+            </div>
+
+            <!-- JD -->
+            <div class="row mb-3 align-items-center">
+                <div class="col-4 text-start">
+                    <label class="form-label mb-0">Job Description</label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="jd" class="form-control" required>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary px-4">Analyze</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
